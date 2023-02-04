@@ -29,13 +29,47 @@ fine tune the network to extract even more predictive power.
 
 ### Results
 
-1. Classification without Transfer Learning (Using Convolutional Neural Network)
+1. Performance of the CNN without Transfer Learning
 
-| Sr No |  Hyperparameters | Values/Type |
-|:-----:|:----------------:|:-----------:|
-|   1   |     Optimizer    |     Adam    |
-|   2   |   Learning Rate  |    10<sup>-5</sup>    |
-|   3   | Number of Epochs |     100     |
-|   4   |    Batch Size    |      16     |
+      | Sr No |  Hyperparameters | Values/Type |
+      |:-----:|:----------------:|:-----------:|
+      |   1   |     Optimizer    |     Adam    |
+      |   2   |   Learning Rate  |    10<sup>-5</sup>    |
+      |   3   | Number of Epochs |     100     |
+      |   4   |    Batch Size    |      16     |
 
+![adam_100epoch_10e5_16batch](https://user-images.githubusercontent.com/90370308/216736119-41ea2444-8a91-4406-97ab-63aef84122f4.png)
+ - Testing Accuracy: 45.58%
+ 
+ 2. Performance with the Transfer learning with only Fully connected layer tuned
+ 
+      | Sr No |  Hyperparameters | Values/Type |
+      |:-----:|:----------------:|:-----------:|
+      |   1   |     Optimizer    |     Adam    |
+      |   2   |   Learning Rate  |    10<sup>-5</sup>    |
+      |   3   | Number of Epochs |     100     |
+      |   4   |    Batch Size    |      16     |
+      
+![Adam_8_train](https://user-images.githubusercontent.com/90370308/216736325-226f3dff-5361-4f9e-92c0-23cb65d7ee20.png)
+ - Testing Accuracy: 95.58%
+ 
+ 3. Performance with the Transfer learning with all the layer tuned
+ 
+      | Sr No |  Hyperparameters | Values/Type |
+      |:-----:|:----------------:|:-----------:|
+      |   1   |     Optimizer    |     Adam    |
+      |   2   |   Learning Rate  |    10<sup>-5</sup>    |
+      |   3   | Number of Epochs |     100     |
+      |   4   |    Batch Size    |      16     |
+ 
+![1](https://user-images.githubusercontent.com/90370308/216736555-d27fe0e6-7ebb-4c71-9f46-5a15eef78628.png)
+- Testing Accuracy: 98.38%
 
+## Requirement
+Python 2.0 or above
+
+## License
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) Feb 2023 Pradip Kathiriya
